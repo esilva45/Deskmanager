@@ -28,7 +28,7 @@
             // 
             // serviceProcessInstaller
             // 
-            this.serviceProcessInstaller.Account = System.ServiceProcess.ServiceAccount.LocalService;
+            this.serviceProcessInstaller.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
             this.serviceProcessInstaller.Password = null;
             this.serviceProcessInstaller.Username = null;
             // 
@@ -37,6 +37,7 @@
             this.serviceInstaller.Description = "DeskManager Integration";
             this.serviceInstaller.DisplayName = "DeskManager Integration";
             this.serviceInstaller.ServiceName = "DeskManagerIntegration";
+            this.serviceInstaller.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             // 
             // ProjectInstaller
             // 
